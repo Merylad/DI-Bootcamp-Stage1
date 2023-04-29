@@ -1,0 +1,28 @@
+#wrap{
+    background-color: rgb(59, 84, 242);
+    width: 700px;
+    height: 500px;
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: -0.5px;
+}
+#nav{
+    background-color: aqua;
+    width: 30%;
+    margin-left: 50px;
+    height: 87%;
+}
+#content{
+    background-color: rgb(97, 166, 239);
+    width: 70%;
+    height: 87%;
+    margin-right: 50px;
+    text-align: center;
+}
+#couplet li{
+    list-style: none;
+    
+}
+.copyright{
+    text-align: right;
+}

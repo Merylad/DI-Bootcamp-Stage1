@@ -1,0 +1,32 @@
+.col-4{
+    border: 5px solid black;
+    @media screen and (min-width:960px) {
+        width: 33%;
+    } 
+    @media screen and (min-width:765px) and (max-width: 960px) {
+        width: 50%;
+    } 
+    @media screen and (max-width:765px) {
+        width: 100%;
+    } 
+    
+}
+.col-6{
+    border: 5px solid blue;
+    @media screen and (max-width:960px) {
+        width: 100%;
+    }
+    @media screen and (min-width:960px) {
+        width: 50%; 
+    }
+}
+.col-12{
+    border: 5px solid green;
+    width: 100%;
+}
+body{
+    border: 5px solid red;
+    display: flex;
+    flex-direction: column;
+    
+}

@@ -1,0 +1,33 @@
+#wrap{
+    
+    background-color: rgb(43, 86, 216);
+    height: 500px;
+    width: 720px;
+    display: flex;
+    
+}
+#nav{
+    
+    background-color: rgb(106, 206, 234);
+    /* float: left; */
+    height: 87%;
+    /* width: 20%; */
+    margin-left: 8%;
+}
+#content{
+   
+    background-color: rgb(43, 156, 226);
+    /* float: right; */
+    text-align: center;
+    height: 87%;
+    width: 64%;
+    margin-right: 8%;
+   
+}
+.copyright{
+    text-align: center;
+}
+#couplet li{
+    list-style: none;
+}
+
