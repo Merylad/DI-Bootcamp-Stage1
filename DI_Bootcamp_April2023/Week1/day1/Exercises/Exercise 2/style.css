@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+#start{
+    background-color: rgba(136, 193, 228,0.2);
+    position: relative;
+    padding: 15px;
+    
+}
+
+#button1{
+    background-color: blue;
+    border: none;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    right: 20%;
+    padding: 5px;
+}
+
+#starttext{
+font-weight: bold;
+color: rgb(8, 8, 77);
+position: absolute;
+top: 5px;
+left: 15%;
+}
+
+section {
+    height: 500px;
+    background-image: url(sea.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    color: white;
+    font-size: 40px;
+}
+
+#mail{
+    width: 50%;
+}
+
+form{
+    margin-left: 60px;
+}
+
+#signup{
+    background-color: rgb(53, 104, 245);
+    border: none;
+    padding: 4px;
+    border-radius:3px ;
+}
+
+footer{
+    background-color: rgba(136, 193, 228,0.2);
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}

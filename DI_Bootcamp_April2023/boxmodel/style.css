@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+div{
+    border: solid 2px blue;
+    display: inline-block;
+    width: 350px;
+    padding: 20px;
+    margin: 10px;
+}
+
+section{
+    border: solid 2px black;
+}
+ul{
+    border: solid 2px green;
+    position: relative;
+    ;
+}
+
+
+li{
+    border: 2px solid red;
+    display: inline-block;
+}
+#last{
+    background-color: yellow;
+    position: absolute;
+    right: 0
+    
+}
+
+.scroll{
+    border: 2px solid red;
+    height: 100px;
+    overflow: scroll;
+}
+
+h1{
+    background-color: yellow;
+    position: sticky;
+    top: 30px;
+    
+}
