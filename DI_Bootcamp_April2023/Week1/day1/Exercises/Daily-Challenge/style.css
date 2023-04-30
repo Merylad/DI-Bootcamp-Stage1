@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Ysabeau', sans-serif;
+}
+
+.navbar{
+    position: relative;
+    height: 60px;
+    background-color: black;
+}
+
+#logo{
+    position: absolute;
+    left: 20px;
+}
+
+nav{
+    display: inline-block;
+    align-items: end;
+    width: 100%;
+    height: 60px;
+    text-align: end;
+    text-transform: uppercase;
+    word-spacing: 40px;
+    margin-left: -50px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+main{
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    position: relative;
+}
+
+h1{
+    text-transform: uppercase;
+    font-size: 80px;
+    letter-spacing: 5px;
+}
+
+.text{
+    margin-left: 30px;
+    position: absolute;
+    bottom: 30px;
+}
+
+p{
+    width: 50%;
+    font-weight: bold;
+}
