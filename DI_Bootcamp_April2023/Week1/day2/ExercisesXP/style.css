@@ -6,16 +6,24 @@
 
 .navbar{
     background-color: black;
-    padding: 30px;
+    padding: 20px;
     position: relative;
 }
 
 a{
     color: white;
     text-decoration: none;
+    /* position: absolute;
+    right: 5%;
+    line-height: 2; */
+}
+
+.links{
     position: absolute;
     right: 5%;
-    line-height: 2;
+    top: 50%;
+    word-spacing: 40px;
+
 }
 
 #logo{
@@ -29,5 +37,15 @@ footer{
     background-color: black;
     padding: 30px;
     margin-top: 30%;
+}
+
+h1{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4rem;
+  text-shadow: 3px 3px goldenrod;
 }
 

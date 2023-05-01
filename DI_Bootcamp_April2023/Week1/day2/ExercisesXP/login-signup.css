@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    border: solid 5px black;
+    box-shadow: 5px 5px 5px goldenrod;
+    width: 35vw;
+    height: 50vh;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    text-align: center;
+    margin-top: 5%;
+    line-height: 200%;
+    margin: 0;
+    
+}
+
+
+input{
+    width: 15vw;
+    background-color: gold;
+    border: none;
+    display: block;
+    margin: auto;
+}
+
+button{
+    padding: 3%;
+    width: 15vw;
+    background-color: rgba(255, 255, 0, 0.5);
+    margin-top: 5%;
+
+}

@@ -9,8 +9,8 @@
 .product{
     display: inline-block;
     vertical-align: top;
-    width: 20vw;
-    height: 70vh;
+    width: 200px;
+    height:400px;
     background-size: contain;
     background-repeat: no-repeat;
     line-height: 0.3%;
@@ -53,10 +53,11 @@
     border: 2px solid blue;
     border-radius: 50%;
     background-color: blue;
-    width: 70px;
-    height: 70px;
+    width: 20%;
+    height:10%;
     color: white;
-    line-height: 70px;
+    line-height: 40px;
+    font-size: 0.5rem;
    
 }
 
@@ -67,10 +68,11 @@
     position: absolute;
     right: 0;
     top: 0;
-    width: 70px;
-    height: 70px;
+    width: 20%;
+    height:10%;
     color: white;
-    line-height: 70px;
+    line-height: 40px;
+    font-size: 0.8rem;
 }
 
 .newprice{
@@ -89,3 +91,6 @@ button{
     color: gray;
     border: solid 1px black;
 }
+
+
+
