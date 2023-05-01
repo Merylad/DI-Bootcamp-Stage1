@@ -67,6 +67,6 @@ footer{
 }
 
 i{
-    width: 30px;
-    height: 30px;
+    font-size: 60px;
+    color: rgb(103, 208, 234);
 }
