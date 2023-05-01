@@ -56,3 +56,52 @@ p{
     width: 50%;
     font-weight: bold;
 }
+
+/* small devices */
+@media screen and (max-width: 768px){
+    h1{
+        font-size: 35px;
+    }
+    .navbar{
+        background-color: yellow;
+    }
+    a{
+        color: black;
+    }
+}
+
+/* medium devices */
+@media screen and (min-width: 768px) and (max-width:992px) {
+    h1{
+        font-size: 25px;
+    }
+    .navbar{
+        background-color: lightgreen;
+    }
+    a{
+        color: black;
+    }
+}
+
+/* large devices */
+@media screen and (min-width: 992px) and (max-width:1200px) {
+    .navbar{
+        background-color: red;
+    }
+    .text{
+        display: flex;
+    }
+}
+
+/* extra large devices */
+@media screen and (min-width: 1200px){
+    .navbar{
+        background-color: white;
+    }
+    a{
+        color: black;
+    }
+    .text{
+        display: flex;
+    }
+}
