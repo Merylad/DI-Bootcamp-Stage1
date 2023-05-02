@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+main{
+    display: flex;
+    padding: 1rem;
+}
+
+nav{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 4rem;
+    background-color: rgba(83, 193, 237,0.3);
+    text-align: center;
+}
+
+.line{
+    width: 80%;
+    height: 1px;
+    background-color: rgb(175, 175, 231);
+}
+
+img{
+    border-radius: 50%;
+}
+
+h1{
+    font-family: 'Bruno Ace', cursive;
+    font-size: 3rem;
+}
+
+a{
+    font-size: 2rem;
+    color: blue;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    background-color: rgba(73, 112, 238, 0.2);
+    justify-content: center;
+}
+
+.skills{
+    display: flex;
+    justify-content: space-around;
+}
