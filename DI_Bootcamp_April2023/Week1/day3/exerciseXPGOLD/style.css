@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font: 20px;
+}
+
+body{
+    background-image: url(map2.webp);
+    background-size: cover;
+    padding: 2em;
+}
+
+header{
+    text-align: center;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.head{
+    display: flex;
+    justify-content: space-around;  
+}
+
+h1{
+    font-size: 4rem;
+    width: 80%;
+    margin: auto;
+}
+
+.numbers{
+    color: blue;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.description{
+    font-weight: bold;
+    color: rgb(75, 69, 69);
+}
+
+footer{
+    display: flex;
+    gap: 1rem;
+    margin-top: 5rem;
+    height: 35rem;
+}
+
+.square{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 25rem;
+    border: solid 1px gray;
+   
+}
+
+img{
+    border-radius: 50%;   
+}
+
+#photo{
+    display: grid;
+    justify-content: center;
+}
+
+.color{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.3em;
+    flex: 1;
+    height: 10rem;
+}
+
+#corrine{
+    align-self: self-end;
+}
+
+.text{
+    font-size: 1.2em;
+    color: rgb(61, 60, 60);
+    flex: 1;
+    background-color: white;
+    padding: 1em;
+}
+
+.pink{
+    background-color: pink;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.aqua{
+    background-color: rgb(98, 178, 228);
+}
+
+@media all and (max-width:800px){
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
