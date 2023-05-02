@@ -60,36 +60,17 @@ main{
     font-weight: bold;
 }
 
-.hr-lines:before{
-    content:" ";
-    display: block;
-    height: 1px;
-    width: 7vw;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    background: gainsboro;
+#connect{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
 }
 
-.hr-lines{
-    position: relative;
-    font-size: 0.9rem;
-    color: gray;
-    width: 25vw;
-    text-align: center;
-    margin-top: 7%;
-}
-
-
-.hr-lines:after{
-    content:" ";
-    height: 1px;
+.line{
+    height: 1.5px;
+    margin-top: 2%;
+    background: gainsboro ;
     width: 7vw;
-    background: gainsboro;
-    display: block;
-    position: absolute;
-    top: 50%;
-    right: 0;
 }
 
 .logos{
