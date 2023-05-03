@@ -1,0 +1,27 @@
+div{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+}
+.verylight{
+    background-color: rgba(162, 199, 227, 0.939);
+}
+.light{
+    background-color: rgba(82, 121, 151, 0.939);
+}
+
+.dark{
+    background-color: rgba(80, 111, 135, 0.939);
+}
+
+.verydark{
+    background-color: rgba(29, 47, 60, 0.939);
+}
+
+body{
+    display: grid;
+    grid-template-columns: repeat(16,1fr);
+    grid-template-rows: repeat(16,1fr);
+    gap: 2px;
+    width: 800px;
+}

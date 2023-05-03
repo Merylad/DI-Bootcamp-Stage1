@@ -66,11 +66,6 @@ img{
     transform: translate(-50%, 0);  
 }
 
-/* #photo{
-    display: grid;
-    justify-content: center;
-} */
-
 .color{
     display: flex;
     flex-direction: column;
