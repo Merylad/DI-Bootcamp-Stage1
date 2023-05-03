@@ -10,13 +10,13 @@ main{
     justify-content: space-between;
 }
 
-.gauche, .droite{
+.left, .right{
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.milieu{
+.middle{
     display: flex;
     align-items: center;
     gap: 50px;
