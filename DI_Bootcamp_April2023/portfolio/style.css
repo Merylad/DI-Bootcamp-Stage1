@@ -1,0 +1,204 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Instrument Serif', serif;
+    font-size: 20px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 1em;
+    background-image: linear-gradient(to left, rgb(123, 63, 123), rgb(224, 201, 54)) ;
+    position: fixed;
+    width: 100%;
+}
+
+#meryl{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.leftnav{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+#meryladjedj{
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.rightnav{
+    display: flex;
+    gap: 1em;
+}
+
+.buttonnav{
+    border: none;
+    background-color: transparent;
+    width: 70px;
+}
+.buttonnav:hover, #submitbutton:hover{
+    background-image: linear-gradient(to left, rgb(123, 63, 123), rgb(224, 201, 54))
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.jumbotron{
+    height: 10em;
+    display: grid;
+    grid-template-columns: 90% 10%;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+    align-items: center;
+}
+
+#hello{
+    font-size: 3em;
+    font-weight: bold;
+}
+
+#description{
+    text-align: center;
+}
+
+#meryladjedj{
+    font-size: 2em;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 10em;
+}
+
+.icone{
+    font-size: 3rem;
+    color: rgb(57, 12, 12);
+}
+
+.aboutme{
+    display: grid;
+    grid-template-columns:50% 50% ;
+    grid-template-rows: 30% 70%;
+    gap: 2em;
+    padding: 1em;
+    background-color:rgba(123, 63, 123,0.2) ;
+}
+
+.information{
+    grid-column: 1 / span 2;
+    text-align: center;
+    
+}
+
+.information > p{
+    font-size: 0.7rem;
+}
+
+hr{
+    width: 30%;
+    margin-left: 35%;
+    color: rgb(123, 63, 123);
+}
+
+.knowme{
+    line-height: 140%;
+}
+
+.skills{
+align-self: center;
+margin-left: 5em;
+}
+
+#projects{
+    padding-top: 5em;
+    padding-left: 5em;
+    background-color:rgba(123, 63, 123,0.2) ;
+    text-align: center;
+}
+
+.projectscontainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2em;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.projects{
+    width: 250px;
+    height: 150px;
+    border: solid 5px rgb(123, 63, 123);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact{
+    padding-top: 2em;
+    background-color:rgba(123, 63, 123,0.2) ;
+    gap: 1em;
+}
+
+ #contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form{
+    padding: 1em;
+    border: solid 5px rgb(123, 63, 123);
+    width: 25rem;
+    height: 21rem;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+}    
+
+.forminput{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+input, textarea{
+    width: 100%;
+    color: grey;
+    background-color:rgba(123, 63, 123,0.2) ;
+}
+
+#message{
+    /* height: 7rem; */
+}
+
+#submitbutton{
+    align-self: flex-end;
+    width: 20%;
+}
+
