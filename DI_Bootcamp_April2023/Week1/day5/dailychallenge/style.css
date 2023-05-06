@@ -1,0 +1,118 @@
+body{
+    width: 1000px;
+    padding: 5px;
+    box-sizing: border-box;
+    
+}
+
+section{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 15px;
+}
+
+div{
+    height:200px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition:all 0.3s ease;
+    border-radius: 10px;
+}
+
+#gray{
+    background-color: rgba(128, 128, 128,0.5);
+    
+}
+#gray:hover{
+    background-color: gray;
+}
+
+#red{
+    background-color:red ;
+}
+#red:hover{
+    background-color: aqua;
+}
+
+#aqua{
+    background-color:aqua ;
+}
+#aqua:hover{
+   animation-name: shrink;
+   animation-duration: 3s;
+}
+@keyframes shrink{
+    from {
+        transform: scale(1);
+    }
+    to{
+        transform: scale(0.7);
+    }
+}
+
+#yellow{
+    background-color: yellow;
+}
+#yellow:hover{
+    transform: rotate(-50deg);
+}
+
+#purple{
+    background-color: purple;
+}
+#purple:hover{
+    border-radius: 50%;
+}
+
+#brown{
+    background-color: brown;
+}
+#brown:hover{
+    box-shadow: aqua 10px 10px;
+    position: relative;
+    right: 5px;
+}
+
+#green{
+    background-color: green;
+}
+#green:hover{
+    animation-name: swing;
+    animation-duration: 2s;
+}
+@keyframes swing{
+    20% {transform: translateX(10px);}
+    40% {transform: translateX(-10px);}
+    60% {transform: translateX(10px);}
+    80% {transform: translateX(-10px);}
+}
+
+#black{
+    background-color: black;
+}
+#black:hover{
+    border: 25px solid aqua;
+    box-sizing: border-box;
+}
+
+#pink{
+    background-color: rgba(251, 29, 147, 0.84);
+    grid-column: 1 / span 4;
+}
+#pink:hover{
+    animation-name: grow;
+    animation-duration: 3s;
+}
+@keyframes grow{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(5);
+    }
+}
