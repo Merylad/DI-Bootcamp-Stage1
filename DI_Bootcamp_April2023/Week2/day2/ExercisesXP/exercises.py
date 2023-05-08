@@ -9,11 +9,11 @@ friend_fav_numbers = [2,19,1988]
 
 our_fav_numbers = my_fav_numbers+ friend_fav_numbers
 
-
+#######################################################################################################################################################
 #🌟 Exercise 2: Tuple
 #Given a tuple which value is integers, is it possible to add more integers to the tuple?
 #answer: no because it is immutable
-
+#######################################################################################################################################################
 #🌟 Exercise 3: List
 
 basket = ["Banana", "Apples", "Oranges", "Blueberries"]
@@ -24,7 +24,7 @@ basket.insert(0, "Apples")
 apples_count = basket.count("Apples")
 basket.clear()
 print(basket)
-
+#######################################################################################################################################################
 #🌟 Exercise 4: Floats
 
 # 1)a float is a number with a decimal
@@ -40,7 +40,7 @@ while current <= end:
     liste.append(current)
     current = current + step
 print (liste)
-
+#######################################################################################################################################################
 #🌟 Exercise 5: For Loop
 
 for number in range(1,21) :
@@ -50,6 +50,7 @@ for number in range(1,21) :
     if number % 2 == 1 :
         print(number) 
 
+#######################################################################################################################################################
 #🌟 Exercise 6 : While Loop
 
 name = ""
@@ -58,7 +59,7 @@ my_name = "meryl"
 while name != my_name:
     name = input("What's your name ? ")
 
-
+#######################################################################################################################################################
 #🌟 Exercise 7: Favorite Fruits
 
 fav_fruits = input("Enter your favorite fruits, seperate them by a space :")
@@ -70,7 +71,7 @@ if new_fruit in fav_fruits:
 else:
     print("You chose a new fruit. I hope you enjoy!")
     
-
+#######################################################################################################################################################
 #Exercise 8: Who Ordered A Pizza ?
 
 topping = []
@@ -86,6 +87,7 @@ price = (len(topping)*2.5 + 10)
 
 print(f"That will cost §{price}")
 
+#######################################################################################################################################################
 #Exercise 9: Cinemax
 
 family_number = int(input("How many people are you ?" ))
@@ -116,7 +118,7 @@ for number in range(number_teen):
 
 print (list_teen)
 
-
+#######################################################################################################################################################
 #Exercise 10 : Sandwich Orders
 
 sandwich_orders = ["Tuna sandwich", "Avocado sandwich", "Egg sandwich", "Sabih sandwich", "Pastrami sandwich"]
@@ -125,6 +127,7 @@ for sand in sandwich_orders :
     finished_sandwiches.append(sand)
     print(f"I made your {sand}")
 
+#######################################################################################################################################################
 #Exercise 11 : Sandwich Orders#2
 
 sandwich_orders = ["Tuna sandwich", "Pastrami pita", "Egg sandwich","Pastrami sandwich", "Sabih sandwich", "Pastrami sandwich"]
