@@ -43,8 +43,6 @@ print (liste)
 
 #🌟 Exercise 5: For Loop
 
-#1
-
 for number in range(1,21) :
     print(number)
 
@@ -111,7 +109,7 @@ list_teen = []
 
 for number in range(number_teen):
     name_teen= input("What's your name ? ")
-    age_teen = input ("How old are you? ")
+    age_teen = int(input ("How old are you? "))
     if age_teen>= 21:
         list_teen.append(name_teen)
 
@@ -123,18 +121,17 @@ print (list_teen)
 
 sandwich_orders = ["Tuna sandwich", "Avocado sandwich", "Egg sandwich", "Sabih sandwich", "Pastrami sandwich"]
 finished_sandwiches = []
-while sandwich_orders :
-    sandwich_made = sandwich_orders.pop(0)
-    finished_sandwiches.append(sandwich_made)
-    print(f"I made your {sandwich_made}")
+for sand in sandwich_orders :
+    finished_sandwiches.append(sand)
+    print(f"I made your {sand}")
 
 #Exercise 11 : Sandwich Orders#2
 
-sandwich_orders = ["Tuna sandwich", "Pastrami sandwich", "Egg sandwich","Pastrami sandwich", "Sabih sandwich", "Pastrami sandwich"]
+sandwich_orders = ["Tuna sandwich", "Pastrami pita", "Egg sandwich","Pastrami sandwich", "Sabih sandwich", "Pastrami sandwich"]
 finished_sandwiches = []
 print("The deli has run out of pastrami!")
-while sandwich_orders :
-    sandwich_orders.remove("Pastrami sandwich")
-    sandwich_made = sandwich_orders.pop(0)
-    finished_sandwiches.append(sandwich_made)
-    print(f"I made your {sandwich_made}")
+for sand in sandwich_orders:
+    if "Pastrami" in sand:
+        continue
+    finished_sandwiches.append(sand)
+    print(f"I made your {sand}")
