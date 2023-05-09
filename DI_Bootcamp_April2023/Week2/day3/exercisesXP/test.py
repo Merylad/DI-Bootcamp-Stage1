@@ -1,34 +1,16 @@
-users = ["Mickey","Minnie","Donald","Ariel","Pluto"]
+family = {"rick": 43, 'beth': 13, 'morty': 5, 'summer': 8}
+total = 0
+for name, age in family.items() :
+    if age <3 :
+        print(name + 'will pay 0')
+        continue
+    if age <12 :
+        print(name + "will pay 10")
+        total += 10
+    else :
+        total += 15
+        print(name +" will pay 15")
+    
 
-disney_users_A = {}
-
-for character in users :
-    disney_users_A[character] = users.index(character)
-print (disney_users_A)
-
-disney_users_B = {}
-
-for character in users :
-    disney_users_B[users.index(character)] = character
-print(disney_users_B)
-
-users_sorted = sorted(users)
-disney_users_C = {}
-
-for character in users_sorted :
-    disney_users_C[character] = users_sorted.index(character)
-print (disney_users_C)
-
-disney_users_D = {}
-for character in users :
-    if 'i' in character :
-        disney_users_D[character] = users.index(character)
-print (disney_users_D)
-
-disney_users_E = {}
-for character in users :
-    if character.startswith('M') or character.startswith('P') :
-        disney_users_E[character] = users.index(character)
-print (disney_users_E)
-
+print(f"the whole family will pay §{total}")
 

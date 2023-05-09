@@ -11,15 +11,19 @@ print (family)
 
 family = {"rick": 43, 'beth': 13, 'morty': 5, 'summer': 8}
 total = 0
-for number in family.values() :
-    if number <3 :
+for name, age in family.items() :
+    if age <3 :
+        print(name + 'will pay 0')
         continue
-    if number <12 :
+    if age <12 :
+        print(name + "will pay 10")
         total += 10
     else :
         total += 15
+        print(name +" will pay 15")
+    
 
-print(total)
+print(f"the whole family will pay §{total}")
 
 lst_names= input("Tell me your names (separate by a space) : ").split()
 lst_ages= input("tell me your ages (separate by a space) : ").split()
