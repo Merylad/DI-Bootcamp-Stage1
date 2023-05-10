@@ -1,13 +1,17 @@
 # 🌟 Exercise 1 : Set
 
-my_fav_numbers= [3,24,10,8]
+my_fav_numbers= {3,24,10,8}
 
-my_fav_numbers.extend([2013,2019])
-my_fav_numbers.pop(-1)
+my_fav_numbers.add(2013)
+my_fav_numbers.add(2019)
 
-friend_fav_numbers = [2,19,1988]
+my_fav_numbers.discard(2019)
+print(my_fav_numbers)
 
-our_fav_numbers = my_fav_numbers+ friend_fav_numbers
+friend_fav_numbers = {2,19,1988}
+
+our_fav_numbers = my_fav_numbers.union(friend_fav_numbers)
+print(our_fav_numbers)
 
 #######################################################################################################################################################
 #🌟 Exercise 2: Tuple
