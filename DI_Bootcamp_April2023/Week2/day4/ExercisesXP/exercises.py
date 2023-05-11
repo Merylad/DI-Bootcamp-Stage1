@@ -82,10 +82,10 @@ def get_random_temp(season = 'spring'):
        temperature = random.randint(5,15)
     if season == 'winter':
        temperature = random.randint(-10,5)
-    print(temperature)
     return temperature
 
-get_random_temp('spring')
+
+print(get_random_temp('spring'))
 
 user_season = int(input('what is the month ? (1 to 12): '))
 user_season_str = ""
@@ -97,7 +97,7 @@ if 3<= user_season <= 5:
 if 6<= user_season <=8:
     user_season_str = 'summer'
 if 9<= user_season <=11:
-    user_season_str = 'autmn'
+    user_season_str = 'autumn'
 
 def main():
 
