@@ -13,9 +13,9 @@ class Farm :
     
     def get_info (self) :
         info = f"{self.name}'s farm"
-        count = '\n'.join(f'{key}: {value}' for key, value in self.animals.items())
+        count ='\n'.join(f'{key}: {value}' for key, value in self.animals.items())
 
-        sentence = f"{info} \n\n {count} \n \n          E-I-E-I-O!"
+        sentence =f"\n{info} \n\n{count} \n \n          E-I-E-I-O!"
         return sentence
     
     def get_animal_types(self):
