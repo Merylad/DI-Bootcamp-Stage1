@@ -17,4 +17,4 @@ french_words = ["Bonjour", "Au revoir", "Bienvenue", "A bientôt"]
 translations = translate_french_words(french_words)
 
 # Print the translated words
-print(translations) #{'Bonjour': 'Hello', 'Au revoir': 'Goodbye', 'Bienvenue': 'Welcome', 'A bientôt': 'We look forward to hearing from you soon.'}
+print(translations) # {'Bonjour': 'Hello', 'Au revoir': 'Goodbye', 'Bienvenue': 'Welcome', 'A bientôt': 'We look forward to hearing from you soon.'}
