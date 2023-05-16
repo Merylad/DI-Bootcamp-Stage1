@@ -80,10 +80,10 @@ print(c4) # 10 shekels
 print(int(c2)) #10
 
 c1 += c2   
-print(c1)  #35 dollars
+print(c1)  #20 dollars
 
 # print(c1 + c3) #TypeError: Cannot add between Currency type dollar and shekel
 
-print (c3 + c4)
+print (c3 + c4) #11 shekels
 
 
