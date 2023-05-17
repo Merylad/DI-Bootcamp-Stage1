@@ -1,4 +1,4 @@
-# 🌟 Exercise 1 – Random Sentence Generator8ù
+# 🌟 Exercise 1 – Random Sentence Generator
 
 from random import choice
 def get_words_from_file ():
