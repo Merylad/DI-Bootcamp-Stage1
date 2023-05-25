@@ -31,15 +31,13 @@ def remove_item_from_menu(item):
         
 def update_item_from_menu():
     name = input ('Item name: ')
-    price = int(input('Item price: '))
-    item = MenuItem(name, price)
     new_name = input ('Item new_name: ')
     new_price = int(input('Item new_price: '))
-    if MenuManager.get_by_name(name) == None:
+    item = MenuManager.get_by_name(name)
+    if item:
         print ("The item is not in the menu we can't update it")
     else:
         item.update(new_name, new_price)
-
 def show_restaurant_menu():
     print(MenuManager.all_items())
     
