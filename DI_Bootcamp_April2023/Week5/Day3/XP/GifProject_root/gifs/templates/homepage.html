@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> 
+    <title>Homepage</title>
+</head>
+<body>
+    <h1>Homepage</h1>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <ul >
+            <li><a class="nav-link" href="{% url 'add_gif' %}">Add new GIF</a></li>
+            <li><a class="nav-link" href="{% url 'add_category' %}">Add new Category</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <ul class="row list-unstyled">
+            {% for gif in gifs %}
+            <li class="col"><img class="d-block img-fluid "  src="{{ gif.url }}" alt="{{ gif.title }}"></li>
+            {% endfor %}
+        </ul>
+    </div>
+    
+</body>
+</html>

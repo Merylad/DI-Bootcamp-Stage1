@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add new GIF</title>
+</head>
+<body>
+    <h1>Add new GIF</h1>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Add GIF</button>
+    </form>
+</body>
+</html>
