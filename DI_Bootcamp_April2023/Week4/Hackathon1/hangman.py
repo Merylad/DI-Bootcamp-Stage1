@@ -143,6 +143,7 @@ def main():
             
         
     user.display_results()
+    user.close_connection()
             
         
 main()

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display todo</title>
+</head>
+<body>
+    <h1> Todo List</h1>
+    <ul>
+        {%for task in todos%}
+        <h4>Title: {{task.title}} </h4>
+        <li>Details: {{task.details}} </li>
+        <li>Created: {{task.date_creation}} </li>
+        <li>Deadline: {{task.deadline_date}} </li>
+        <li>Category: {{task.category.name}} </li> <br>
+
+        {%if task.has_been_done == False%}
+            <form action="{% url 'mark_done' task.id %}" method="post">
+            {% csrf_token %}
+            <button type="submit"> DONE</button>
+            </form>
+        {%else%}
+            <li>Done the: {{task.date_completion}} </li>
+        {%endif%}   
+
+    {%endfor%}
+    </ul>
+</body>
+</html>

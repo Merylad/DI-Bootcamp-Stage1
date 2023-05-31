@@ -1,5 +1,5 @@
 """
-URL configuration for GifProject project.
+URL configuration for SearchPeople project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.2/topics/http/urls/
@@ -16,15 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from gifs import views
+from people.views import info_by_phone, info_by_name, search_person
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.homepage, name='homepage'),
-    path('add-gif/', views.add_gif_view, name='add_gif'),
-    path('add-category/', views.add_category_view, name='add_category'),
-    path('category/<int:category_id>/', views.category_view, name='category'),
-    path('', views.categories_view, name='categories'),
-    path('gif/<int:gif_id>/', views.gif_view, name='gif'),
+    path('persons/phonenumber/<phone>/', info_by_phone, name='info_by_phone'),
+    path('persons/name/<name>/', info_by_name, name='info_by_name'),
+    path('search-person/', search_person, name='search_person'),
 ]
-

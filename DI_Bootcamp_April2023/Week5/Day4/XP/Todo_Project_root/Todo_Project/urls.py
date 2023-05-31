@@ -1,5 +1,5 @@
 """
-URL configuration for GifProject project.
+URL configuration for Todo_Project project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.2/topics/http/urls/
@@ -16,15 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from gifs import views
+from todo.views import add_todo_view, display_todos, mark_done 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.homepage, name='homepage'),
-    path('add-gif/', views.add_gif_view, name='add_gif'),
-    path('add-category/', views.add_category_view, name='add_category'),
-    path('category/<int:category_id>/', views.category_view, name='category'),
-    path('', views.categories_view, name='categories'),
-    path('gif/<int:gif_id>/', views.gif_view, name='gif'),
+    path('add-todo/', add_todo_view, name='add_todo'),
+    path('display-todos/', display_todos, name='display_todos'),
+    path('display-todos/mark_done/<int:todo_id>/', mark_done, name='mark_done')
 ]
-

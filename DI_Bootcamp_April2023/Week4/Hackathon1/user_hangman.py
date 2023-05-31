@@ -108,7 +108,3 @@ class UsersDB:
         self.cursor.close()
         self.connection.close()
         
-    
-# meryl = UsersDB()
-# meryl.register_or_connect()
-# meryl.close_connection()
