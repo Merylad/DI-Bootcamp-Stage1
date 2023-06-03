@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental_by_pk</title>
+</head>
+<body>
+   <h3> Rental information :</h3>
+   <ul>
+    
+    <li>bike : {{rental.vehicle}} </li>
+    <li>rented by : {{rental.customer}} </li>
+    <li>rented on: {{rental.rental_date}} </li>
+    {%if rental.return_date%}
+        <li>Returned on: {{rental.return_date}}</li>
+    {%else%}
+        <li>Not returned yet</li>
+    {%endif%}
+    
+</ul>
+    
+</body>
+</html>

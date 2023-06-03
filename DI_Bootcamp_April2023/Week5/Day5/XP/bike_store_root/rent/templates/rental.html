@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental bikes</title>
+</head>
+<body>
+    <h1>Rental bikes:</h1>
+        <ul>
+        {%for r in rentals%}
+         <h1> bike_id : {{r.vehicle}} </h1>
+        <li>rented by : {{r.customer}} </li>
+        <li>rented on: {{r.rental_date}} </li>
+        {%if r.return_date%}
+            <li>Returned on: {{r.return_date}}</li>
+        {%else%}
+            <li>Not returned yet</li>
+         <br>
+        
+        {%endif%}
+        {%endfor%}</ul>
+   
+</body>
+</html>

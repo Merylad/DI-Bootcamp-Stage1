@@ -1,30 +1,40 @@
+{%load static%}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css'%}">
     <title>Display todo</title>
 </head>
 <body>
-    <h1> Todo List</h1>
-    <ul>
-        {%for task in todos%}
-        <h4>Title: {{task.title}} </h4>
-        <li>Details: {{task.details}} </li>
-        <li>Created: {{task.date_creation}} </li>
-        <li>Deadline: {{task.deadline_date}} </li>
-        <li>Category: {{task.category.name}} </li> <br>
+ 
+    <h1>Todo List</h1>
 
-        {%if task.has_been_done == False%}
-            <form action="{% url 'mark_done' task.id %}" method="post">
-            {% csrf_token %}
-            <button type="submit"> DONE</button>
-            </form>
-        {%else%}
-            <li>Done the: {{task.date_completion}} </li>
-        {%endif%}   
+    {%for category in categories%}
+        <p> 
+            <h2>{{category}}</h2>
+            {%for todo in category.todos.all%}
+           <ul> <h4>Title: {{todo.title}} </h4>
+                <li>Details: {{todo.details}} </li>
+                <li>Created: {{todo.date_creation}} </li>
+                <li>Deadline: {{todo.deadline_date}} </li>
+                <li>Category: {{todo.category.name}} </li> 
+            </ul>
 
+            {%if todo.has_been_done == False%}
+                <form action="{% url 'mark_done' todo.id %}" method="post">
+                {% csrf_token %}
+                <button type="submit"> DONE</button>
+                </form>
+            {%else%}
+                <li>Done the: {{todo.date_completion}} </li>
+            {%endif%} 
+            {%endfor%}
+
+        </p>
     {%endfor%}
     </ul>
 </body>

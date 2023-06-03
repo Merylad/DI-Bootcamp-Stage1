@@ -4,9 +4,12 @@ from .models import Category, Todo
 class TodoForm (forms.ModelForm):
     class Meta:
         model = Todo
-        fields = '__all__'
+        fields = ('title', 'details', 'deadline_date', 'category')
         widgets = {
-            'date_completion': forms.HiddenInput(),
+            'deadline_date': forms.DateInput(attrs={'type':'date'})
         }
-        
-        
+       
+class CategoryForm (forms.ModelForm):
+    class Meta:
+        model = Category
+        fields = '__all__'
