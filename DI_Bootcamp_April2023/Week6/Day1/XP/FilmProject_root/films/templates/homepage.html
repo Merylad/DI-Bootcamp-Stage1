@@ -16,9 +16,17 @@
         <p class="card-text">Director: {{film.director}}</p>
         
 
+        <h4>Reviews:</h4>
+        <ul>
+            {% for review in film.film_name.review_text %}
+            <li>{{ review.review_text }}</li>
+            {% endfor %}
+        </ul>
+        
+
     </div>
 </div>
-
+  
 <br>
 {%endfor%}
 {%endblock content%}

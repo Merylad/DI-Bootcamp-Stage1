@@ -1,5 +1,6 @@
 from django.db import models
 from datetime import date
+from django.core.validators import MinValueValidator, MaxValueValidator
 
 # Create your models here.
 class Film(models.Model):
@@ -31,3 +32,11 @@ class Director (models.Model):
     
     def __str__(self):
         return f'{self.first_name} {self.last_name}'
+    
+class Review (models.Model):
+    film = models.ForeignKey('Film', on_delete=models.CASCADE, related_name = 'film_name')
+    review_text = models.TextField()
+    rating =models.FloatField(validators=[
+                              MinValueValidator(0.0),
+                              MaxValueValidator(5.0)])
+    review_date = models.DateField(default = date.today)
