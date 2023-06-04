@@ -1,0 +1,24 @@
+
+{% extends 'base.html' %}
+
+{%block content%}
+{%for film in films%}
+
+<div class="card" style="width: 18rem;" >
+    <div class="card-body" ></div>
+
+    
+        <h3 class="card-title">Title : {{film.title}} </h3>
+        <p class="card-text">Release date : {{film.release_date |date:"F d, Y"}}</p>
+        <p class="card-text">Created in: {{film.created_in_country}}</p>
+        <p class="card-text">Availabale in: {{film.available_in_countries}}</p>
+        <p class="card-text">Category: {{film.category}}</p>
+        <p class="card-text">Director: {{film.director}}</p>
+        
+
+    </div>
+</div>
+
+<br>
+{%endfor%}
+{%endblock content%}
