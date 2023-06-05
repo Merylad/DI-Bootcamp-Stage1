@@ -1,0 +1,50 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+{% if user.is_authenticated %}
+{% for film in films %}
+
+
+<div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="{{ film.image_id.image.url }}" alt="{{ film.image_id.explanation_img }}">
+
+    <div class="card-body">
+    <h3 class="card-title">Title: {{ film.title }}</h3>
+    <p class="card-text">Release Date: {{ film.release_date|date:"F d, Y" }}</p>
+    <p class="card-text">Created in: {{ film.created_in_country }}</p>
+
+    <p class="card-text">Available in:
+        {% for country in film.available_in_countries.all %}
+        {{ country.name }}
+
+          {% endfor %}</p>
+
+    <p class="card-text">Category:
+        {% for category in film.category.all %}
+        {{ category.name }}
+
+        {% endfor %}</p>
+
+    <p class="card-text">Director:
+        {% for director in film.director.all %}
+        {{ director }}
+
+        {% endfor %}</p>
+     
+    <p class="card-text">Reviews: <br>
+        {% for rev in film.film_name.all %}
+         rate : {{ rev.rating }}
+        <br>
+        {{rev.review_text}}
+        <br>
+    
+        {% endfor %}</p>
+
+    </div>
+</div>
+<br>
+
+{% endfor %}
+{% endif %}
+{% endblock %}
