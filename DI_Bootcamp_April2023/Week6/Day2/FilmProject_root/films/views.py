@@ -23,10 +23,7 @@ class AddPosterView(CreateView):
     template_name= 'add_poster.html'
     success_url= reverse_lazy('homepage')
     
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        context['reviews'] = Review.objects.all()  
-        return context
+
     
 class DirectorCreateView(CreateView):
     model= Director
