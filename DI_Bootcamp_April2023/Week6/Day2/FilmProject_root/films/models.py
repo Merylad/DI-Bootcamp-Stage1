@@ -1,7 +1,7 @@
 from django.db import models
 from datetime import date
 from django.core.validators import MinValueValidator, MaxValueValidator
-from accounts.models import UserProfile
+
 
 # Create your models here.
 
@@ -51,4 +51,5 @@ class Film(models.Model):
     
     def __str__(self):
         return self.title
+    
     

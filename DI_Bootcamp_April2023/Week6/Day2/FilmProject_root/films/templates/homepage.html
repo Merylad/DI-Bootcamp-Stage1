@@ -3,6 +3,15 @@
 
 {% block content %}
 {% if user.is_authenticated %}
+
+{% if messages %}
+  <ul class="messages">
+    {% for message in messages %}
+    <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+    {% endfor %}
+  </ul>
+{% endif %}
+
 {% for film in films %}
 
 
@@ -32,14 +41,14 @@
 
         {% endfor %}</p>
      
-    <p class="card-text">Reviews: <br>
-        {% for rev in film.film_name.all %}
-         rate : {{ rev.rating }}
-        <br>
-        {{rev.review_text}}
-        <br>
     
-        {% endfor %}</p>
+   
+
+    <a href="{%url 'details' film.id%}"> <button type="submit">Show Details</button></a>
+    {%if user.is_staff%}
+    <a href="{%url 'delete_film' film.id%}"> <button type="submit">DELETE</button></a>
+    {%endif%}
+        </p>
 
     </div>
 </div>

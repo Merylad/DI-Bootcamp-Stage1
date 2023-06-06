@@ -16,7 +16,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from films.views import HomePageView, AddFilmView, DirectorCreateView, ReviewCreateView, AddPosterView
+from films.views import (HomePageView, 
+                         AddFilmView, 
+                         DirectorCreateView, 
+                         ReviewCreateView, 
+                         AddPosterView,
+                         FilmDeleteView,
+                         FilmDetailView,
+                         FavoriteFilmView)
 from django.conf import settings
 from django.conf.urls.static import static
 
@@ -27,8 +34,11 @@ urlpatterns = [
     path ('homepage/add-director', DirectorCreateView.as_view(), name = 'add_director'),
     path ('homepage/add-review', ReviewCreateView.as_view(), name = 'add_review'),
     path ('homepage/add-poster', AddPosterView.as_view(), name = 'add_poster'),
+    path('homepage/favorites/<int:film_id>', FavoriteFilmView.as_view(), name = 'favorites'),
+    path('homepage/details/<int:pk>', FilmDetailView.as_view(), name = 'details'),
+    path('homepage/delete-film/<int:pk>', FilmDeleteView.as_view(), name = 'delete_film' ),
     path('accounts/', include ('accounts.urls')) 
 ]
 
-if settings.DEBUG:
-    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
