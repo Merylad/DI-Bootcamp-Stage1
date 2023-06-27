@@ -18,21 +18,21 @@ const displayGroceries = () =>{
     })
 }
 
-displayGroceries()
+displayGroceries();
 
 const cloneGroceries = () => {
-    let user = client
+    let user = client;
     // Change the client variable to “Betty”. Will we also see this modification in the user variable ? Why ? YES BC USER AND CLIENT HAS THE SAME VALUE
 
     let shopping = groceries;
-    shopping.totalPrice = '35$'
-    // Will we also see this modification in the shopping object ? Why ? YES BC SHOPPING AND GROCERIES HAS THE SAME ADDRESS SINCE IT IS PASSED BU REFERENCE
+    shopping.totalPrice = '35$';
+    // Will we also see this modification in the shopping object ? Why ? YES BC SHOPPING AND GROCERIES HAS THE SAME ADDRESS SINCE IT IS PASSED BY REFERENCE
     shopping.other.payed = 'false';
 
     console.log (groceries);
     console.log(shopping);
 }
 
-cloneGroceries()
+cloneGroceries();
 
 
