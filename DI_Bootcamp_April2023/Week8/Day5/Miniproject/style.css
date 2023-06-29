@@ -1,0 +1,72 @@
+body{
+    background-image: url("card-pattern.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 128, 0, 0.4);
+}
+
+#navbar{
+    margin-top: 0px;
+    background-color: lightskyblue;
+    height: 50px;
+}
+
+#textsection{
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+#searchbar{
+    margin-left: 30px;
+}
+
+#inputsearchbar{
+    width: 800px;
+}
+
+#robofriends{
+    font-family: 'Kablammo', cursive;
+    font-size: 30px;
+}
+
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.divrobot{
+    border: 2px solid blue;
+}
+
+.robotimg {
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: rgb(77, 82, 238);
+    margin: 10px;
+}
+
+.name{
+    color: rgb(18, 18, 119);
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+    
+}
+
+.mail{
+    margin-left: 10px;
+    color: rgb(18, 18, 119);
+    font-style: italic;
+}
+
+.divrobot{
+    background-color: rgb(173, 216, 230, 0.7);
+}
