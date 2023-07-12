@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XP Exercises</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="container">
+        <form action="/login" method="POST" id="loginForm"><br>
+            <h1>Login</h1>
+            <label for="UsernameLog">Username:</label><br>
+            <input type="text" id="usernameLog" name="usernameLog"> <br>
+            <label for="passwordLog">Password:</label><br>
+            <input type="password" id="passwordLog" name="passwordLog"><br> <br>
+            <button id="btnLogin" onClick="loginUser()">Login</button>
+        </form>
+        <form action="/register" method="POST" id="registerForm">
+            <h1>Register</h1>
+            <label for="firstname">Firstname:</label><br>
+            <input type="text" id="firstname" name="firstname"><br>
+            <label for="lastname">Lastname:</label><br>
+            <input type="text" id="lastname" name="lastname"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="UsernameReg">Username:</label><br>
+            <input type="text" id="usernameReg" name="usernameReg"> <br>
+            <label for="passwordReg">Password:</label><br>
+            <input type="password" id="passwordReg" name="passwordReg"><br> <br>
+            <button id="btnRegister" onClick="registerUser()">Register</button>
+
+        </form>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
