@@ -6,6 +6,8 @@ import { Events } from './Components/Events';
 import { Phone } from './Components/Phone';
 import { Color } from './Components/Color';
 import { Languages } from './Components/Languages';
+import Book from './Components/Gold2Ex1';
+import WelcomeForm from './Components/Gold2Ex2';
 
 
 const carinfo = {name: "Ford", model: "Mustang"};
@@ -22,7 +24,9 @@ function App() {
         {/* <Events /> */}
         {/* <Phone /> */}
         {/* <Color /> */}
-        <Languages />
+        {/* <Languages /> */}
+        <Book />
+        <WelcomeForm />
       
     </div>
   );
