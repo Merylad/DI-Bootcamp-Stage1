@@ -8,6 +8,7 @@ import Profile from './components/Profile';
 import Shop from './components/Shop';
 import PostList from './components/PostList';
 import Example from './components/Example';
+import Hello from './components/Hello';
 
 // EXERCISE 1 XP 
 
@@ -33,11 +34,26 @@ import Example from './components/Example';
 
 // export default App;
 
+//W11D4 EXERCISES XP 1 + 2 + 3
+
+// function App() {
+//   return (
+//     <>
+//       {/* <PostList /> */}
+//       <Example />
+//     </>
+//   );
+// }
+
+// export default App;
+ 
+//W11 D 4 DAILY CHALLENGE
 function App() {
   return (
     <>
-      {/* <PostList /> */}
-      <Example />
+      
+      <Hello />
+      
     </>
   );
 }
