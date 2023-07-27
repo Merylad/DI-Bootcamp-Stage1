@@ -1,0 +1,51 @@
+
+
+.todocontainer{
+    border: 3px solid brown;
+    border-radius: 30px;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: burlywood;
+
+    
+}
+
+#title{
+    text-align: center;
+    color: brown;
+    font-size: 50px;
+}
+
+.todo{
+    background-color: white;
+    padding: 3px;
+    cursor: pointer;
+
+}
+
+.todo:hover{
+    text-decoration: line-through;
+}
+
+#taskinput{  
+    border: none;  
+    border-bottom: 2px solid brown;
+    background-color: burlywood;
+}
+
+#addtask{
+    font-size: 12px;
+    color: gray;
+    font-style: italic;
+}
+
+#nothing{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}

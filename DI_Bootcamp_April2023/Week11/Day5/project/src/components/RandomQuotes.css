@@ -1,0 +1,40 @@
+
+.container{
+    border: 1px solid black;
+    border-radius: 20px;
+    padding : 6%;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 5%;
+    background-color: wheat;
+    
+}
+
+#author{
+    text-align: end;
+    font-style: italic;
+   
+}
+
+#btn{
+margin-left: 85%;
+padding: 10px;
+border: 1px solid black;
+border-radius: 10px;
+color: white;
+
+}
+
+@keyframes slideFromTop {
+    0% {
+      transform: translateY(-100%); /* Starting position: off-screen to the top */
+    }
+    100% {
+      transform: translateY(0); /* Ending position: slide in to the original position */
+    }
+  }
+  
+  .slide-from-top {
+    /* Apply the animation to the paragraph element */
+    animation: slideFromTop 1s ease;
+  }

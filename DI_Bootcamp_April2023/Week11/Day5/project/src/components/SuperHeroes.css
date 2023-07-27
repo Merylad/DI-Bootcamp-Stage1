@@ -1,0 +1,42 @@
+#navbar{
+    background-color: red;
+    color: white;
+}
+#score{
+    text-align: end;
+}
+
+#info{
+    background-image: linear-gradient(to right, #ff0000, #9210dd);
+    height: 50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#herocontainer{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around; 
+}
+
+.card{
+    
+    padding: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3), -3px -3px 5px rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    
+}
+
+.card:hover{
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6), -10px -10px 15px rgba(255, 255, 255, 0.5)
+}
+
+.card-img-top{
+    width: 200px;
+    height: 300px;
+    margin: 0 auto;
+    margin-left: 40px;
+}
