@@ -9,6 +9,7 @@ import Shop from './components/Shop';
 import PostList from './components/PostList';
 import Example from './components/Example';
 import Hello from './components/Hello';
+import WebHook from './components/WebHook';
 
 // EXERCISE 1 XP 
 
@@ -52,7 +53,8 @@ function App() {
   return (
     <>
       
-      <Hello />
+      {/* <Hello /> */}
+      <WebHook />
       
     </>
   );
